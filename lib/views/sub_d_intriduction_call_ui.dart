@@ -151,9 +151,12 @@ class _SubDIntriductionCallUIState extends State<SubDIntriductionCallUI> {
                         shape: CircleBorder(),
                         padding: EdgeInsets.all(10),
                       ),
-                      child: Icon(
-                        Icons.arrow_forward_ios,
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                      child: Text(
+                        "โทรเลย",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ],
