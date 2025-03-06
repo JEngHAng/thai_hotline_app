@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:thai_hotline_app/views/sub_a_home_ui.dart'; // นำเข้าไฟล์ข้ามไปหน้าอื่น
-import 'package:thai_hotline_app/views/sub_b_intriduction_call_ui.dart';
-import 'package:thai_hotline_app/views/sub_d_intriduction_call_ui.dart'; // นำเข้าไฟล์หน้าถัดไป
+import 'package:thai_hotline_app/views/sub_d_intriduction_call_ui.dart';// นำเข้าไฟล์หน้าถัดไป
+import 'package:thai_hotline_app/views/sub_b_intriduction_call_ui.dart'; 
 
 class SubAIntriductionCallUI extends StatefulWidget {
   const SubAIntriductionCallUI({super.key});
