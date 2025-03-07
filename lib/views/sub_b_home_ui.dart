@@ -44,14 +44,14 @@ class _SubBHomeUIState extends State<SubBHomeUI> {
               style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
             ),
             Text(
-              "การเดินทาง",
+              "อุบัติเหตุ-เหตุฉุกเฉิน",
               style: TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: MediaQuery.of(context).size.height * 0.015),
             SizedBox(
               width: 175,
               height: 175,
-              child: Image.asset('assets/images/subA.png', fit: BoxFit.cover),
+              child: Image.asset('assets/images/subB.png', fit: BoxFit.cover),
             ),
             SizedBox(height: 20), // ระยะห่างระหว่างรูปกับรายการ
             Expanded(

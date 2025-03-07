@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:thai_hotline_app/views/home_ui.dart';
-import 'package:thai_hotline_app/views/sub_a_home_ui.dart'; // นำเข้าไฟล์หน้าถัดไป
 
 class SubDIntriductionCallUI extends StatefulWidget {
   const SubDIntriductionCallUI({super.key});
