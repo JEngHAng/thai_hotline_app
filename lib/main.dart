@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:thai_hotline_app/views/introduction_call_ui.dart';
 import 'package:thai_hotline_app/views/sub_a_intriduction_call_ui.dart';
 
 
@@ -21,7 +22,7 @@ class _thai_hotline_appState extends State<thai_hotline_app> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SubAIntriductionCallUI(),
+      home: IntroductionCallUI(),
       theme: ThemeData(
         textTheme: GoogleFonts.kanitTextTheme(
           Theme.of(context).textTheme

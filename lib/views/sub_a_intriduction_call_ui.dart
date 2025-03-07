@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:thai_hotline_app/views/sub_d_intriduction_call_ui.dart';// นำเข้าไฟล์หน้าถัดไป
-import 'package:thai_hotline_app/views/sub_b_intriduction_call_ui.dart'; 
 
 class SubAIntriductionCallUI extends StatefulWidget {
   const SubAIntriductionCallUI({super.key});
@@ -10,19 +8,7 @@ class SubAIntriductionCallUI extends StatefulWidget {
 }
 
 class _SubAIntriductionCallUIState extends State<SubAIntriductionCallUI> {
-  void _skipToHome(BuildContext context) {
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => SubDIntriductionCallUI()),
-    );
-  }
-
-  void _goToNextScreen(BuildContext context) {
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => SubBIntriductionCallUI()),
-    );
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -96,56 +82,6 @@ class _SubAIntriductionCallUIState extends State<SubAIntriductionCallUI> {
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.13,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 1),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    /// ปุ่ม "ข้าม"
-                    TextButton(
-                      onPressed: () => _skipToHome(context),
-                      child: Text(
-                        "ข้าม",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-
-                    /// แสดงหน้าปัจจุบัน (1 เป็นสีฟ้า, 3 เป็นสีเทา)
-                    Row(
-                      children: List.generate(4, (index) {
-                        return Container(
-                          margin: EdgeInsets.symmetric(horizontal: 5),
-                          width: 20,
-                          height: 20,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: index == 0
-                                ? const Color.fromARGB(255, 0, 0, 255)
-                                : const Color.fromARGB(255, 185, 185, 185),
-                          ),
-                        );
-                      }),
-                    ),
-
-                    /// ปุ่มลูกศรไปหน้าถัดไป
-                    ElevatedButton(
-                      onPressed: () => _goToNextScreen(context),
-                      style: ElevatedButton.styleFrom(
-                        // backgroundColor: Colors.blue,
-                        shape: CircleBorder(),
-                        padding: EdgeInsets.all(10),
-                      ),
-                      child: Icon(
-                        Icons.arrow_forward_ios,
-                        color: const Color.fromARGB(255, 0, 0, 0),
-                      ),
-                    ),
-                  ],
-                ),
               ),
             ],
           ),
