@@ -71,7 +71,7 @@ class _AboutUIState extends State<AboutUI> {
               height: 170,
               child: ClipOval(
                 child: Image.asset(
-                  'assets/images/pic.jpeg',
+                  'assets/images/mee.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
