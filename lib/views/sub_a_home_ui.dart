@@ -1,48 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:thai_hotline_app/views/about_ui.dart';
-
+ 
 class SubAHomeUI extends StatefulWidget {
   const SubAHomeUI({super.key});
-
+ 
   @override
   State<SubAHomeUI> createState() => _SubAHomeUIState();
 }
-
+ 
 class _SubAHomeUIState extends State<SubAHomeUI> {
-  
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.grey,
-        title: Row(
-          children: [
-            Spacer(), // เพิ่ม Spacer เพื่อให้ข้อความอยู่กลาง
-            Text(
-              "สายด่วน THAILAND",
-              style: TextStyle(
-                color: Colors.black,
-              ),
-            ),
-            Spacer(), // เพิ่ม Spacer อีกอัน เพื่อให้ไอคอนชิดขวา
-            IconButton(
-              icon: Icon(
-                Icons.info, // เปลี่ยนเป็นไอคอนที่ต้องการ
-                color: Colors.black,
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => AboutUI(),
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
-        centerTitle: false, // ปิดการใช้ centerTitle เพราะเราจัดการตำแหน่งเอง
-      ),
       body: Center(
         child: Column(
           children: [

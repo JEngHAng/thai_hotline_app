@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thai_hotline_app/views/home_ui.dart';
 import 'package:thai_hotline_app/views/sub_a_home_ui.dart'; // นำเข้าไฟล์หน้าถัดไป
 
 class SubDIntriductionCallUI extends StatefulWidget {
@@ -12,14 +13,14 @@ class _SubDIntriductionCallUIState extends State<SubDIntriductionCallUI> {
   void _skipToHome(BuildContext context) {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => SubDIntriductionCallUI()),
+      MaterialPageRoute(builder: (context) => HomeUI()),
     );
   }
 
   void _goToNextScreen(BuildContext context) {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => SubAHomeUI()),
+      MaterialPageRoute(builder: (context) => HomeUI()),
     );
   }
 
