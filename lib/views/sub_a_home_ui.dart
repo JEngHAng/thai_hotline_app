@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thai_hotline_app/views/home_ui.dart';
+import 'package:thai_hotline_app/views/about_ui.dart';
 
 class SubAHomeUI extends StatefulWidget {
   const SubAHomeUI({super.key});
@@ -34,7 +34,7 @@ class _SubAHomeUIState extends State<SubAHomeUI> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomeUI(),
+                    builder: (context) => AboutUI(),
                   ),
                 );
               },
