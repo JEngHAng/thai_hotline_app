@@ -96,10 +96,17 @@ class _SubCHomeUIState extends State<SubCHomeUI> {
   // ฟังก์ชันโทรออก
   void _makePhoneCall(String phoneNumber) async {
     final Uri phoneUri = Uri(scheme: 'tel', path: phoneNumber);
-    if (await canLaunchUrl(phoneUri)) {
-      await launchUrl(phoneUri);
-    } else {
-      throw 'ไม่สามารถโทรไปที่ $phoneNumber ได้';
+    try {
+      if (await canLaunchUrl(phoneUri)) {
+        await launchUrl(phoneUri);
+      } else {
+        throw 'ไม่สามารถโทรไปที่ $phoneNumber ได้';
+      }
+    } catch (e) {
+      // แสดงข้อความแสดงข้อผิดพลาดถ้าไม่สามารถโทรได้
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('ไม่สามารถโทรได้: $e')),
+      );
     }
   }
 

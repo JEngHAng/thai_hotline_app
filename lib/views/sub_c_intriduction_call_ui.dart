@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SubCIntriductionCallUI extends StatefulWidget {
-  const SubCIntriductionCallUI({super.key});
+class SubCIntroductionCallUI extends StatefulWidget {
+  const SubCIntroductionCallUI({super.key});
 
   @override
-  State<SubCIntriductionCallUI> createState() => _SubCIntriductionCallUIState();
+  State<SubCIntroductionCallUI> createState() => _SubCIntroductionCallUIState();
 }
 
-class _SubCIntriductionCallUIState extends State<SubCIntriductionCallUI> {
+class _SubCIntroductionCallUIState extends State<SubCIntroductionCallUI> {
   
   @override
   Widget build(BuildContext context) {
